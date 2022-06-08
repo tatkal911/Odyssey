@@ -1,0 +1,38 @@
+{
+	"name": "travelogue-server",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"client": "npm run start --prefix client",
+		"server": "nodemon index.js",
+		"dev": "concurrently \"npm run client\" \"npm run server\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chebro/travelogue.git"
+	},
+	"author": "",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/chebro/travelogue/issues"
+	},
+	"homepage": "https://github.com/chebro/travelogue#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"dotenv": "^10.0.0",
+		"ejs": "^3.1.8",
+		"express": "^4.17.2",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.3.5"
+	},
+	"devDependencies": {
+		"eslint": "^8.4.1",
+		"nodemon": "^2.0.15",
+		"prettier": "^2.5.1",
+		"pretty-quick": "^3.1.2",
+		"simple-git-hooks": "^2.7.0"
+	}
+}
